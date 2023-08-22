@@ -948,8 +948,8 @@ class JL:
 		s_u = torch.zeros(l_u.shape).to(device)
 		s_u[s_u < 0.001] = 0.001
 
-		tokenizer.save_pretrained("./NH_Paths/tokenizer_weights_mod___1%")
-		self.feature_model.save_pretrained("./NH_Paths/model_weights_mod___1%")		 
+		# tokenizer.save_pretrained("./Paths/tokenizer_weights_mod___1%")
+		self.feature_model.save_pretrained("./Paths/model_weights")		 
 		if return_gm:
 			return preds, (probability(self.theta_optimal, self.pi_optimal, torch.abs(torch.tensor(l_u, device = self.device).long()), s_u, \
 				self.k, self.n_classes, self.continuous_mask, qc_, self.device)).cpu().detach().numpy()
