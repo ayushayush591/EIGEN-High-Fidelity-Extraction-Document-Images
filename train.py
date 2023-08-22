@@ -20,7 +20,7 @@ from torch.nn import LayerNorm as BertLayerNorm
 from spear4HighFidelity.spear.utils.data_editor import get_data, get_classes, get_predictions
 from spear4HighFidelity.spear.utils.utils_cage import probability, log_likelihood_loss, precision_loss, predict_gm_labels
 from spear4HighFidelity.spear.utils.utils_jl import log_likelihood_loss_supervised, entropy, kl_divergence
-from spear4HighFidelity.spear.jll.models.models import *
+# from spear4HighFidelity.spear.jl.models.models import *
 from transformers import LayoutLMTokenizer,LayoutLMForTokenClassification
 tokenizer = LayoutLMTokenizer.from_pretrained("microsoft/layoutlm-base-uncased")
 import pickle 
