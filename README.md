@@ -16,4 +16,5 @@ Create a new virtual environment, navigate to this directory and run the followi
 3. Paths directory contain all the pickle files which is needed for training.<br>
 4. cords_demo.ipynb is the file which contains code for running inference on CORDS data from the stored model.<br>
 5. nh_demo.ipynb is the file which contains code for running inference on NH data from the stored model.<br>
+6. train.py has the code for Jointly training of feature model and Cage model.
 
