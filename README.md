@@ -1,6 +1,10 @@
-# key-value-extraction-from-spear
+## Joint Learning Aggregation for High-Fidelity Information Extraction from Document Images
+
+> [EIGEN: Expert-Informed Joint Learning Aggregation for High-Fidelity Information Extraction from Document Images](https://ml4health.github.io/2023/online_proceedings.html)                     
+> Abhishek Singh, Venkatapathy Subramaninan, Ayush Maheshwari, Pradeep Narayan, Devi Prasad Shetty and Ganesh Ramakrishnan  
+> Machine Learning For Health, (__ML4H__) 2023
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-###Instruction For Training<br>
+###Instruction For Training
 Create a new virtual environment, navigate to this directory and run the following command:
 1. git clone main branch.<br>
 2. Download CORDS receipt dataset in current directory "https://drive.google.com/drive/folders/1mKrsYBW7xXzfxNLSYwQ02bHayqVfe-94?usp=sharing".
