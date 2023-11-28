@@ -28,6 +28,18 @@ from torch.nn import CrossEntropyLoss
 max_seq_length = 512
 from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter()
+def set_seed(seed: int = 10) -> None:
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    # When running on the CuDNN backend, two further options must be set
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    # Set a fixed value for the hash seed
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    print(f"Random seed set as {seed}")
+set_seed()
 #[Note: 
 	#1. Loss function number, Calculated over, Loss function:
 	#		1, L, Cross Entropy(prob_from_feature_model, true_labels)
