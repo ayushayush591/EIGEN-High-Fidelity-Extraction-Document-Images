@@ -1,6 +1,6 @@
 ## Joint Learning Aggregation for High-Fidelity Information Extraction from Document Images
 
-> [EIGEN: Expert-Informed Joint Learning Aggregation for High-Fidelity Information Extraction from Document Images](https://ml4health.github.io/2023/online_proceedings.html)                     
+> [EIGEN: Expert-Informed Joint Learning Aggregation for High-Fidelity Information Extraction from Document Images](https://arxiv.org/abs/2311.13993)                     
 > Abhishek Singh, Venkatapathy Subramaninan, Ayush Maheshwari, Pradeep Narayan, Devi Prasad Shetty and Ganesh Ramakrishnan  
 > Machine Learning For Health, (__ML4H__) 2023
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
