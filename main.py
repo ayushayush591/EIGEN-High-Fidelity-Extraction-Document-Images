@@ -395,7 +395,9 @@ for i in range(len(L_w)):
     for j in range(len(L_w[i])):
         for k in range(len(L_w[i][j])):
             if L_w[i][j][k]==None:
-                L_w[i][j][k]=-1
+                L_w[i][j][k]=0
+            else:
+                L_w[i][j][k]=1 
 
 L_w_test=[]
 for i in range(len(token_test)):
@@ -413,7 +415,9 @@ for i in range(len(L_w_test)):
     for j in range(len(L_w_test[i])):
         for k in range(len(L_w_test[i][j])):
             if L_w_test[i][j][k]==None:
-                L_w_test[i][j][k]=-1
+                L_w_test[i][j][k]=0
+            else:
+                L_w_test[i][j][k]=1
 
 L_w_dev=[]
 for i in range(len(token_dev)):
@@ -431,7 +435,9 @@ for i in range(len(L_w_dev)):
     for j in range(len(L_w_dev[i])):
         for k in range(len(L_w_dev[i][j])):
             if L_w_dev[i][j][k]==None:
-                L_w_dev[i][j][k]=-1
+                L_w_dev[i][j][k]=0
+            else:
+                L_w_dev[i][j][k]=1
 
 def org_lab(label):
     for i in range(len(label)):
