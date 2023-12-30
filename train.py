@@ -146,7 +146,7 @@ def convert_examples_to_featuresz(
     sequence_a_segment_id=0,
     mask_padding_with_zero=True,
 ):
-    ABSTAIN=[-1]*n_lfs
+    ABSTAIN=[0]*n_lfs
     label_map = {label: i for i, label in enumerate(label_list)}
 
     features = []
