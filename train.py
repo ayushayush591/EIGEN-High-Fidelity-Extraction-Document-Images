@@ -28,7 +28,7 @@ from torch.nn import CrossEntropyLoss
 max_seq_length = 512
 from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter()
-def set_seed(seed: int = 10) -> None:
+def set_seed(seed: int = 42) -> None:
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -538,10 +538,10 @@ class JL:
 		# supervised_criterion = torch.nn.functional.cross_entropy
 		optimizer = AdamW(self.feature_model.parameters(), lr=5e-5)
 		with tqdm(total=n_epochs_) as pbar:
-			# self.feature_model.train()
 			global_step = 0
 			global_step_i = 0
 			for epoch in range(n_epochs_):
+				self.feature_model.train()
 				dataloader_iterator = iter(train_dataloader)
 				for batchz in tqdm(train_u_dataloader):
 					try:
@@ -683,7 +683,9 @@ class JL:
 					gm_valid_acc = accuracy_score(y_valid, y_pred)
 				else:
 					gm_valid_acc = f1_score(y_valid, y_pred, average = metric_avg)
-								#fm test
+
+				(self.feature_model).eval()
+				#fm test
 				#############################################################
 				nb_test_steps=0
 				test_loss=0.0
