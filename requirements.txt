@@ -12,3 +12,6 @@ torchvision==0.15.2
 transformers
 Pillow==9.3.0
 -e git+https://github.com/mindee/doctr.git@31f05c8320aea3db757c9be2d1589c8ee11fe2f9#egg=python_doctr
+transformers==4.30.2
+huggingface-hub==0.15.1
+seqeval
