@@ -22,6 +22,9 @@ from spear4HighFidelity.spear.utils.utils_cage import probability, log_likelihoo
 from spear4HighFidelity.spear.utils.utils_jl import log_likelihood_loss_supervised, entropy, kl_divergence
 # from spear4HighFidelity.spear.jl.models.models import *
 from transformers import LayoutLMTokenizer,LayoutLMForTokenClassification
+import numpy as np
+import os
+import random
 tokenizer = LayoutLMTokenizer.from_pretrained("microsoft/layoutlm-base-uncased")
 import pickle 
 from torch.nn import CrossEntropyLoss
